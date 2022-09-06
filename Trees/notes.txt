@@ -1,0 +1,7 @@
+Properties of a tree:
+- a child node only has one parent
+- a parent may have multiple children
+- a child node may not have its parent as a child (no cyclical linking)
+- there is a path from the root node to every other node 
+
+
