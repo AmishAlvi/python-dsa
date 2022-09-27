@@ -41,8 +41,10 @@ my_dict1['Dave'] = '004' - changes the value at key 'Dave' to '004'
 my_dict1['Ryan'] = '007' - creates a new value at key 'Ryan'
 
 - Deleting Values:
-my_dict1.pop('John') -  removes the item with key 'John' from the Dictionary
-my_dict1.popitem() - removes the last item in the Dictionary
+my_dict1.pop('John') -  removes the item with key 'John' from the Dictionary and returns its value
+my_dict1.popitem() - removes the last item in the Dictionary and returns it
+del my_dict1['Dave'] - removes the value at key 'Dave' from the Dictionary
+
 
 
 
