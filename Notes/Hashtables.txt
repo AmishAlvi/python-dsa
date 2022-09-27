@@ -1,0 +1,48 @@
+# HASHTABES:
+is a key => value lookup
+example:
+hashtable.put(Mary)
+hashtable.get(Mary)
+key and value can be any data structure
+- hashfuction: takes the data, returns some sort of integer and adds the data to an array at that integer index.
+- array might be much smaller than the potential hashcodes so we may remap the hashcodes to the existing array size. 
+- two things with different hashcodes can end up with the same index, so we actually have a linkedlist or some other structure at the index that the data is added to. (This is called Collision, chaining)
+
+# Big(o) of HASHTABLES:
+O(1) - constant time for a "good" hashtable.
+O(n) - linear time for a "bad" hashtable.
+
+# Things to learn further:
+* Collision handling
+* how hashtables grow/shrink
+* implement your own hashtable
+
+# Dictionaries (Python's version of hashtables): 
+my_dict1 = {'Dave': '001', 'John': '002', 'Doe': '003',}
+my_dict2 = dict(David='001', John='002', Doe='003)
+
+# Nested Dictionaries:
+emp_deatils={'Employee':
+                {'Dave':
+                        {'ID':'001', 'Salary':'2000'},
+                'Ava': 
+                        {'ID':'002', 'Salary':'2000'},
+                }}
+
+# Dictionary Operations:
+- Accessing Values:
+my_dict1['Dave'] - this will return '001'
+my_dict1.keys() - this will return a list of keys
+my_dict1.values() - this will return a list of values
+my_dict1.get('John') - this will return '002'
+
+- Updating and Adding Values:
+my_dict1['Dave'] = '004' - changes the value at key 'Dave' to '004'
+my_dict1['Ryan'] = '007' - creates a new value at key 'Ryan'
+
+- Deleting Values:
+my_dict1.pop('John') -  removes the item with key 'John' from the Dictionary
+my_dict1.popitem() - removes the last item in the Dictionary
+
+
+
